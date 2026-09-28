@@ -1,5 +1,5 @@
 {
-    "name" : "Madscience.Logging",
+    "name" : "Madscience.Loggger",
     "export" : "src/Loggger",
     "runtimes" : [ 6 ],
     "author" : "Shukri Adams <mail@shukriadams.com",
