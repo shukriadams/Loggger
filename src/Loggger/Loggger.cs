@@ -144,7 +144,7 @@ namespace Madscience.Loggger
 
             string source = GetTypeName(sourceContext);
             if (!string.IsNullOrEmpty(source))
-                source = $" |Src:{source}";
+                source = $"Src:{source}|";
 
             string dateString = GenerateDateString();
             string category_lead = "ERR";
@@ -193,7 +193,7 @@ namespace Madscience.Loggger
 
             string source = this.GetTypeName(sourceContext);
             if (!string.IsNullOrEmpty(source))
-                source = $" |Src:{source}";
+                source = $"Src:{source}|";
 
             string dateString = GenerateDateString();
             string category_lead = "WRN";
@@ -241,7 +241,7 @@ namespace Madscience.Loggger
                     .Replace("}", " ");
 
             if (!string.IsNullOrEmpty(source))
-                source = $" |Src:{source}";
+                source = $"Src:{source}|";
 
             string dateString = GenerateDateString();
             string category_lead = "STA";
@@ -288,7 +288,7 @@ namespace Madscience.Loggger
                     .Replace("}", " ");
 
             if (!string.IsNullOrEmpty(source))
-                source = $" |Src:{source}";
+                source = $"Src:{source}|";
 
             string dateString = GenerateDateString();
             string category_lead = "DBG";
@@ -332,7 +332,7 @@ namespace Madscience.Loggger
                     .Replace("}", " ");
 
             if (!string.IsNullOrEmpty(source))
-                source = $" |Src:{source}";
+                source = $"Src:{source}|";
 
             string dateString = GenerateDateString();
             string category_lead = "TRC";
@@ -398,7 +398,7 @@ namespace Madscience.Loggger
 
         private string GenerateDateString() 
         {
-            return this.AppendDates ? $"{DateTime.UtcNow.ToString("yyyy/MM/dd HH:mm:ss")}| " : string.Empty;
+            return this.AppendDates ? $"{DateTime.UtcNow.ToString("yyyy/MM/dd HH:mm:ss")}|" : string.Empty;
         }
 
         private string GetTypeName(object obj)
